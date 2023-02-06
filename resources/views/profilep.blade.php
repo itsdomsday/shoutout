@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Laravel</title>
+  <link href="path/to/lightbox.css" rel="stylesheet" />
   <style>
     *{
       margin: 0;
@@ -57,9 +57,19 @@
     justify-content: space-around;
     flex-flow: wrap;
   }
+
+  .album img{
+    transition: 1s;
+    padding: 5px;
+  }
+  .album img:hover{
+    filter:grayscale(50%);
+    transform: scale(1.1);
+  }
   </style>
 </head>
 <body>
+
   <div class="sidebar">
   <a class="navbar-brand" href="#">
         <img src="https://w7.pngwing.com/pngs/227/383/png-transparent-franklin-marshall-college-youtube-logo-youtube-blue-text-trademark.png" height="65" width="85" style="margin-left: 10px;   border-radius: 50%;" alt=""
@@ -205,12 +215,17 @@
       </div>
 
       <div class="album" style="float: left;">
-      <a href="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/129314832_3612613648796830_6724460720046237658_n.jpg?stp=dst-jpg_p960x960&_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGspCHYIBfe6x5hQIxcYXOC0gu2MzgbvBPSC7YzOBu8E_1d6DFLgMcah40D4C9rcQf0Cg1vWIi0Ot7uBSd8Z9xo&_nc_ohc=I2I9tziR494AX90hINq&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfADIpg_T7T3GvDZDG9ECXgshNR61M1pd7kzcourQa8FyA&oe=6408CF16"><img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/129314832_3612613648796830_6724460720046237658_n.jpg?stp=dst-jpg_p960x960&_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGspCHYIBfe6x5hQIxcYXOC0gu2MzgbvBPSC7YzOBu8E_1d6DFLgMcah40D4C9rcQf0Cg1vWIi0Ot7uBSd8Z9xo&_nc_ohc=I2I9tziR494AX90hINq&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfADIpg_T7T3GvDZDG9ECXgshNR61M1pd7kzcourQa8FyA&oe=6408CF16" height="300"  alt=""></a>
+      <a href="./img/1.jpg"><img src="./img/1.jpg" alt=""></a>
+
       <a href="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/61497496_2287926681265540_8510780303239806976_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeHNZ6N24_SChU47XIPbi_ODcaEyyVUQ-8hxoTLJVRD7yC4Oob2-QHqMQpGsCx9--NP88GsKQ6yf9Z0Qtmr8TvVe&_nc_ohc=dOEl6xIsEhgAX9JjsLh&tn=jpUEIVEff-V9z0JH&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfB7ANVXptBpgrR3rqPx1HA8rPQQFk-RlqSiZyijwgI3Gg&oe=6408E257"><img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/61497496_2287926681265540_8510780303239806976_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeHNZ6N24_SChU47XIPbi_ODcaEyyVUQ-8hxoTLJVRD7yC4Oob2-QHqMQpGsCx9--NP88GsKQ6yf9Z0Qtmr8TvVe&_nc_ohc=dOEl6xIsEhgAX9JjsLh&tn=jpUEIVEff-V9z0JH&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfB7ANVXptBpgrR3rqPx1HA8rPQQFk-RlqSiZyijwgI3Gg&oe=6408E257" height="300" alt=""></a>
+
       <a href="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/58763350_2238447429546799_3979491966604804096_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeHyPyt9Lr3xNYnhztXR56NY2laFc3qNOEPaVoVzeo04Q4MwjxIRh2Cl1UovJ7VzLZFGuyIboWGP9vwbqcUvYf-c&_nc_ohc=QVSkkx9o3w0AX92xsUT&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfBciiKP3hUz5W3btXbKPHGyIhk8WncQaQY8FrPwbtKIAQ&oe=6408D3D9"><img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/58763350_2238447429546799_3979491966604804096_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeHyPyt9Lr3xNYnhztXR56NY2laFc3qNOEPaVoVzeo04Q4MwjxIRh2Cl1UovJ7VzLZFGuyIboWGP9vwbqcUvYf-c&_nc_ohc=QVSkkx9o3w0AX92xsUT&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfBciiKP3hUz5W3btXbKPHGyIhk8WncQaQY8FrPwbtKIAQ&oe=6408D3D9" height="300" alt=""></a>
+
       <a href="https://scontent.fcrk4-1.fna.fbcdn.net/v/t31.18172-8/22459478_1527645933960289_8849104674690725844_o.jpg?_nc_cat=101&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeFNLQ4j3Or0u14zYtS1BsCQ51YHtLfzzhPnVge0t_POEwGRV7z_XTlfQSy0aFhMgPW8ZbsoSDQl-5jTptMDLAS5&_nc_ohc=XKlTupjNE2cAX8tJor3&_nc_oc=AQkRJ9coZ2QgIGDkMogCHPb1vZGIsH6AAY7lVPMThmzJ2Aq74wUDk-u8WjoUYuD93DU&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfADX93B4OgesddmzaTb22xk5JR84GCoyCwPEYMiP77UrQ&oe=6408EC4F"><img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t31.18172-8/22459478_1527645933960289_8849104674690725844_o.jpg?_nc_cat=101&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeFNLQ4j3Or0u14zYtS1BsCQ51YHtLfzzhPnVge0t_POEwGRV7z_XTlfQSy0aFhMgPW8ZbsoSDQl-5jTptMDLAS5&_nc_ohc=XKlTupjNE2cAX8tJor3&_nc_oc=AQkRJ9coZ2QgIGDkMogCHPb1vZGIsH6AAY7lVPMThmzJ2Aq74wUDk-u8WjoUYuD93DU&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfADX93B4OgesddmzaTb22xk5JR84GCoyCwPEYMiP77UrQ&oe=6408EC4F" height="300" alt=""></a>
       </div>
 
-      <div class="album" style="float: left;">About</div>
+      <img src="./img/1.jpg" height="300" alt="">
+
 </body>
+<script src="path/to/lightbox.js"></script>
 </html>
