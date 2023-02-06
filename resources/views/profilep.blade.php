@@ -1,161 +1,185 @@
+
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">        
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
 
-        <title>Laravel</title>
-        <style>
-            body {
-    background-color: #fbfbfb;
+    body{
+      box-sizing: border-box;
     }
-    @media (min-width: 991.98px) {
-    main {
-    padding-left: 240px;
-    }
+
+    .sidebar{
+      position: fixed;
+      background: gray;
+      width: 250px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
     }
     
-    /* Sidebar */
-    .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    padding: 58px 0 0; /* Height of navbar */
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-    width: 240px;
-    z-index: 600;
+    .sidebar ul li {
+      margin: 25px 0;
     }
     
-    @media (max-width: 991.98px) {
-    .sidebar {
-    width: 100%;
+    .sidebar ul li h4{
+      color: #000000;
+      margin-left: 20px;
+      transition: 0.4s;
     }
-    }
-    .sidebar .active {
-    border-radius: 5px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-    }
-    
-    .sidebar-sticky {
-    position: relative;
-    top: 0;
-    height: calc(100vh - 48px);
-    padding-top: 0.5rem;
-    overflow-x: hidden;
-    overflow-y: auto;
-    }
-        </style>
 
-    </head>
-    <body class="antialiased">
-      <!--Main Navigation-->
-<header>
-  <!-- Sidebar -->
-  <nav id="sidebarMenu" class="d-lg-block sidebar collapse bg-white">
-    <div class="position-sticky">
-      <div class="list-group list-group-flush mx-3 mt-4">
-        <!-- Collapse -->
-        <a class="list-group-item list-group-item-action py-2 ripple" aria-current="true"
-          data-mdb-toggle="collapse" href="#collapseExample1" aria-expanded="true"
-          aria-controls="collapseExample1">
-          <i class="fas fa-tachometer-alt fa-fw me-3"></i><span><h4>SOCIAL</h4></span>
+    .sidebar h2{
+      margin-left: 20px;
+    }
+
+    .main{
+      margin-left: 220px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+  <a class="navbar-brand" href="#">
+        <img src="https://w7.pngwing.com/pngs/227/383/png-transparent-franklin-marshall-college-youtube-logo-youtube-blue-text-trademark.png" height="65" width="85" style="margin-left: 10px;   border-radius: 50%;" alt=""
+          loading="lazy" style="border-radius: 50%" />
+    </a>
+    <strong style="float: right; margin-top: 18px; margin-right: 5px"><h1>ShoutOut!</h1></strong> 
+    </br>
+    </br>
+    <h2>Places</h2>
+    <ul class="nav">
+      <li>
+        <a href="#">
+          <i class="fas fa-server"></i>
+          <span><h4>Friends</h4></span>
         </a>
+      </li>
 
-        <ul id="collapseExample1" class="collapse show list-group list-group-flush">
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset" style="text-decoration: none">Facebook</a>
-          </li>
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset" style="text-decoration: none">Instagram</a>
-          </li>
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset" style="text-decoration: none">Twitter</a>
-          </li>
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset" style="text-decoration: none">Telegram</a>
-          </li>
-        </ul>
-
-        <a class="list-group-item list-group-item-action py-2 ripple" aria-current="true"
-          data-mdb-toggle="collapse" href="#collapseExample1" aria-expanded="true"
-          aria-controls="collapseExample1">
-          <i class="fas fa-tachometer-alt fa-fw me-3"></i><span><h4>MENU</h4></span>
+      <li>
+        <a href="#">
+          <i class="fas fa-server"></i>
+          <span><h4>Marketplace</h4></span>
         </a>
+      </li>
 
-        <ul id="collapseExample1" class="collapse show list-group list-group-flush">
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset" style="text-decoration: none">Statistics</a>
-          </li>
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset" style="text-decoration: none">Dashboard</a>
-          </li>
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset" style="text-decoration: none">Documents</a>
-          </li>
-        </ul>
-
-        <a class="list-group-item list-group-item-action py-2 ripple" aria-current="true"
-          data-mdb-toggle="collapse" href="#collapseExample1" aria-expanded="true"
-          aria-controls="collapseExample1">
-          <i class="fas fa-tachometer-alt fa-fw me-3"></i><span><h4>OTHERS</h4></span>
+      <li>
+        <a href="#">
+          <i class="fas fa-server"></i>
+          <span><h4>Groups</h4></span>
         </a>
+      </li>
 
-        <ul id="collapseExample1" class="collapse show list-group list-group-flush">
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset" style="text-decoration: none">Settings</a>
-          </li>
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset" style="text-decoration: none">Log Out</a>
-          </li>
-        </ul>
-        <!-- Collapse 1 -->
+      <li>
+        <a href="#">
+          <i class="fas fa-server"></i>
+          <span><h4>Most Recent</h4></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fas fa-server"></i>
+          <span><h4>Events</h4></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fas fa-server"></i>
+          <span><h4>Favorites</h4></span>
+        </a>
+      </li>
+    </ul>
+
+
+    <h2>Menu</h2>
+    <ul class="nav">
+      <li>
+        <a href="#">
+          <i class="fas fa-server"></i>
+          <span><h4>Statistics</h4></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fas fa-server"></i>
+          <span><h4>Dashboard</h4></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fas fa-server"></i>
+          <span><h4>Documents</h4></span>
+        </a>
+      </li>
+      </ul>
+
+      
+    <h2>Other</h2>
+    <ul class="nav">
+      <li>
+        <a href="#">
+          <i class="fas fa-server"></i>
+          <span><h4>Settings</h4></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fas fa-server"></i>
+          <span><h4>Log Out</h4></span>
+        </a>
+      </li>
+      </ul>
       </div>
-    </div>
-  </nav>
-  <!-- Sidebar -->
-
-  <!-- Navbar -->
-  <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Toggle button -->
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#sidebarMenu"
-        aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <!-- Brand -->
-      <a class="navbar-brand" href="#">
-        <img src="https://i.pinimg.com/originals/82/49/cb/8249cba5c97d9b5b2df24a15f5c31580.png" height="55" width="60" alt=""
-          loading="lazy" style="border-radius: 50%" /> <strong> ShoutOut!</strong>
-      </a>
-  </nav>
-  <!-- Navbar -->
-</header>
-
-<!--Main layout-->
-<main style="margin-top: 58px;">
+      
+    <div class="main">
+    <main style="margin-top: -5px;">
   <div class="container pt-1"></div>
-
   <div style="float: left; margin: 40px ;">
           <img src="https://cdn4.iconfinder.com/data/icons/facebook-and-social-media-2/64/Facebook_and_Social_Media-11-512.png" height="50" alt="">
-          <h5 style="float: right; margin: 10px;">Friends </h5>
+          <h3 style="float: right; margin: 10px;">Friends </h3>
         </div>
 
-  <div style="float: left; margin: 40px ;">
+        <div style="float: left; margin: 40px ;">
           <img src="https://cdn-icons-png.flaticon.com/512/2977/2977815.png" height="45" alt="">
-           	<h5 style="float: right; margin: 10px;">Followers </h5>
+           	<h3 style="float: right; margin: 10px;">Followers </h3>
             </div>
         
-        <div style="float: left; margin: 40px ;">
+        <div style="float: left; margin: 40px;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJOIdtka4kzZFal6HYSh-EUFxiJ5TeVTSKSkoJ4BOt_5qRmBZW38RMyVrHwrP9128XKAE&usqp=CAU" height="55" alt="">
-           <h5 style="float: right; margin: 10px;">Following </h5>
+           <h3 style="float: right; margin: 10px;">Following </h3>
         </div>
-        <div>hello</div>
+        
+        <div style="float: left; margin: 40px;">
+        <img src="https://png.pngtree.com/png-vector/20220702/ourmid/pngtree-television-icon-logo-vector-illustration-design-png-image_5672312.png" height="55" alt="">
+           <h3 style="float: right; margin: 10px;">Watch </h3>
+        </div>
+
+        <div style="float: left; margin: 40px;">
+        <img src="https://png.pngtree.com/png-vector/20191208/ourmid/pngtree-beautiful-photo-album-glyph-vector-icon-png-image_2084717.jpg" height="55" alt="">
+           <h3 style="float: right; margin: 10px;">Album </h3>
+        </div>
+
+         <div style="float: left; margin: 40px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAMLwfxVieHHK6Bv_CX1X41OW-RkZxoxuE3yAAH6fjuQEeDHQUh3dfkIrtPZFg_VBJ8o&usqp=CAU" height="55" alt="">
+           <h3 style="float: right; margin: 10px; margin-left: 5px">Stories </h3>
+        </div>
 </main>
-<!--Main layout-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    </body>
+
+<div class="container">hello</div>
+    </div>
+    
+</body>
 </html>
