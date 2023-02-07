@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-  <link href="path/to/lightbox.css" rel="stylesheet" />
   <style>
     *{
       margin: 0;
@@ -19,7 +18,7 @@
 
     .sidebar{
       position: fixed;
-      background: #e0e0e0;
+      background-image: linear-gradient(to bottom right, skyblue , lightyellow);
       width: 250px;
       height: 100%;
       top: 0;
@@ -40,10 +39,6 @@
     .sidebar h2{
       margin-left: 20px;
     }
-
-    .main{
-      margin-left: 220px;
-    }
   
     #child{
       margin-left: 250px;
@@ -56,6 +51,25 @@
     flex-direction: row;
     justify-content: space-around;
     flex-flow: wrap;
+    margin-left: 220px;
+  }
+
+  .about{
+    display: flex;
+    margin-left: 300px;
+    float: left;
+    margin-top: 80px;
+  }
+  .aboutcontent{
+    display: flex;
+    margin-left: 300px;
+    float: left;
+    border-radius: 25px;
+    margin-top: 10px;
+    background-image: linear-gradient(to bottom right, skyblue , lightyellow);
+    padding-bottom: 10px;
+    word-break: break-all;
+    white-space: pre-wrap;
   }
 
   .album img{
@@ -209,13 +223,19 @@
       
 
       <div style="float: left; margin-left: 250px;">
-      Post
-      Followers
-      Following</div>
+      <a href="" style="color: #000000;">Post</a>
+      </div>
+      <div style="float: left; margin-left: 5px;">
+      <a href="" style="color: #000000;">Followers</a>
+      </div>
+      <div style="float: left; margin-left: 5px;">
+      <a href="" style="color: #000000;">Following</a>
+      </div>
       </div>
 
       <div class="album" style="float: left;">
-      <a href="./img/1.jpg"><img src="./img/1.jpg" alt=""></a>
+      
+      <a href="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.6435-9/129314832_3612613648796830_6724460720046237658_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGspCHYIBfe6x5hQIxcYXOC0gu2MzgbvBPSC7YzOBu8E_1d6DFLgMcah40D4C9rcQf0Cg1vWIi0Ot7uBSd8Z9xo&_nc_ohc=I2I9tziR494AX-mxaNk&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfB2CF8H7Awyxujc_PkokKpaw_72SoiQY98xqYfZWNijaA&oe=6409B016"><img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.6435-9/129314832_3612613648796830_6724460720046237658_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGspCHYIBfe6x5hQIxcYXOC0gu2MzgbvBPSC7YzOBu8E_1d6DFLgMcah40D4C9rcQf0Cg1vWIi0Ot7uBSd8Z9xo&_nc_ohc=I2I9tziR494AX-mxaNk&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfB2CF8H7Awyxujc_PkokKpaw_72SoiQY98xqYfZWNijaA&oe=6409B016" height="300" alt="images"></a>
 
       <a href="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/61497496_2287926681265540_8510780303239806976_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeHNZ6N24_SChU47XIPbi_ODcaEyyVUQ-8hxoTLJVRD7yC4Oob2-QHqMQpGsCx9--NP88GsKQ6yf9Z0Qtmr8TvVe&_nc_ohc=dOEl6xIsEhgAX9JjsLh&tn=jpUEIVEff-V9z0JH&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfB7ANVXptBpgrR3rqPx1HA8rPQQFk-RlqSiZyijwgI3Gg&oe=6408E257"><img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/61497496_2287926681265540_8510780303239806976_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeHNZ6N24_SChU47XIPbi_ODcaEyyVUQ-8hxoTLJVRD7yC4Oob2-QHqMQpGsCx9--NP88GsKQ6yf9Z0Qtmr8TvVe&_nc_ohc=dOEl6xIsEhgAX9JjsLh&tn=jpUEIVEff-V9z0JH&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfB7ANVXptBpgrR3rqPx1HA8rPQQFk-RlqSiZyijwgI3Gg&oe=6408E257" height="300" alt=""></a>
 
@@ -223,9 +243,19 @@
 
       <a href="https://scontent.fcrk4-1.fna.fbcdn.net/v/t31.18172-8/22459478_1527645933960289_8849104674690725844_o.jpg?_nc_cat=101&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeFNLQ4j3Or0u14zYtS1BsCQ51YHtLfzzhPnVge0t_POEwGRV7z_XTlfQSy0aFhMgPW8ZbsoSDQl-5jTptMDLAS5&_nc_ohc=XKlTupjNE2cAX8tJor3&_nc_oc=AQkRJ9coZ2QgIGDkMogCHPb1vZGIsH6AAY7lVPMThmzJ2Aq74wUDk-u8WjoUYuD93DU&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfADX93B4OgesddmzaTb22xk5JR84GCoyCwPEYMiP77UrQ&oe=6408EC4F"><img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t31.18172-8/22459478_1527645933960289_8849104674690725844_o.jpg?_nc_cat=101&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeFNLQ4j3Or0u14zYtS1BsCQ51YHtLfzzhPnVge0t_POEwGRV7z_XTlfQSy0aFhMgPW8ZbsoSDQl-5jTptMDLAS5&_nc_ohc=XKlTupjNE2cAX8tJor3&_nc_oc=AQkRJ9coZ2QgIGDkMogCHPb1vZGIsH6AAY7lVPMThmzJ2Aq74wUDk-u8WjoUYuD93DU&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfADX93B4OgesddmzaTb22xk5JR84GCoyCwPEYMiP77UrQ&oe=6408EC4F" height="300" alt=""></a>
       </div>
-
-      <img src="./img/1.jpg" height="300" alt="">
-
 </body>
-<script src="path/to/lightbox.js"></script>
-</html>
+
+            <div class="about">
+                <h1>About</h1>
+            </div>
+
+
+      <div class="aboutcontent">
+      <p> 
+      This is a Professional WebsiteType Platform. Here we will provide you only interesting content, which you will like very much. We're dedicated to providing you the best of WebsiteType, with a focus on dependability and        
+      WebsiteSpeciality. We're working to turn our passion for WebsiteType into a booming online website. We hope you enjoy our WebsiteType as much as we enjoy offering them to you.
+      I will keep posting more important posts on my Website for all of you. Please give your support and love.
+      Thanks For Visiting Our Site
+      Have a nice day!</p> 
+      </div>
+      </html>
