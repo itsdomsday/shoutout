@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <title>Bootstrap Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Document</title>
+    <title>Shoutout</title>
     <style>
         #sidebar-wrapper{
             z-index: 1;
@@ -41,9 +41,22 @@
             list-style: none;
         }
 
-        .sidebar-nave li{
+        .sidebar-nav li{
             text-indent: 20px;
+            line-height: 40px;
         }
+
+        
+        .sidebar-nav a{
+          display: block;
+          text-decoration: none;
+          color: #ddd;
+        }
+
+        .sidebar-nav a:hover{
+          background: #16a085;  
+        }
+        
     </style>
 </head>
 <body>
@@ -61,7 +74,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <a href="#" class="btn btn-success" id="menu-toggle">Menu</a>
+                        <a href="#" class="btn btn-success" id="menu-toggle">Toggle Menu</a>
                          <h2><strong>ShoutOut</strong></h2>
                          <p>I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you,</p>
                     </div>
@@ -73,7 +86,7 @@
    <script>
         $("#menu-toggle").click( function(e){
             e.preventDefault();
-            $("wrapper").toggleClass("menuDisplayed ");
+            $("#wrapper").toggleClass("menuDisplayed ");
         } );
    </script>
 </body>
