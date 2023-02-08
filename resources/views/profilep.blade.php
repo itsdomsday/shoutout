@@ -77,64 +77,65 @@
     white-space: pre-wrap;
     margin-bottom: 20px;
   }
+  #almbumimg{
+      width: 100px;
+      height: 90px;
+      border-radius: 25%;
+    }
 
-  .row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+    .closebtn {
+  position: absolute;
+  top: 23%;
+  right: 23%;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
 }
 
 .column img {
   opacity: 1; 
   cursor: pointer; 
-  border-radius: 25px;
 }
 
 .column img:hover {
   opacity: 0.8;
 }
+  /*.row {
+  display: -ms-flexbox; /* IE10 */
+  /*display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+ /* flex-wrap: wrap;
+  padding: 0 4px;
+}
+ 
+/*Create four equal columns that sits next to each other */
+/*.column {
+  -ms-flex: 25%; /* IE10 */
+ /* flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
 
 /* Clear floats after the columns */
-.row:after {
+/*.row:after {
   content: "";
   display: table;
   clear: both;
 }
 
 /* The expanding image container */
-.container {
+/*.container {
   position: relative;
   display: none;
 }
 
 /* Expanding image text */
-#imgtext {
+/*#imgtext {
   position: absolute;
   bottom: 15px;
   left: 15px;
   color: white;
   font-size: 20px;
-}
-
-/* Closable button inside the expanded image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: black;
-  font-size: 35px;
-  cursor: pointer;
-  border-radius: 25%;
 }
 
   /* Responsive layout - makes a two column-layout instead of four columns */
@@ -154,6 +155,7 @@
     max-width: 100%;
   }
 }
+
   </style>
 </head>
 <body>
@@ -264,22 +266,22 @@
             </div>
         
         <div style="float: left; margin: 40px;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJOIdtka4kzZFal6HYSh-EUFxiJ5TeVTSKSkoJ4BOt_5qRmBZW38RMyVrHwrP9128XKAE&usqp=CAU" height="55" alt="" style="border-radius: 25%">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJOIdtka4kzZFal6HYSh-EUFxiJ5TeVTSKSkoJ4BOt_5qRmBZW38RMyVrHwrP9128XKAE&usqp=CAU" height="55" alt="" style="border-radius: 50%">
            <h3 style="float: right; margin: 10px;">Weekly Following </h3>
         </div>
         
         <div style="float: left; margin: 40px;">
-        <img src="https://png.pngtree.com/png-vector/20220702/ourmid/pngtree-television-icon-logo-vector-illustration-design-png-image_5672312.png" height="55" alt="" style="border-radius: 25%">
+        <img src="https://png.pngtree.com/png-vector/20220702/ourmid/pngtree-television-icon-logo-vector-illustration-design-png-image_5672312.png" height="55" alt="">
            <h3 style="float: right; margin: 10px;">Watch </h3>
         </div>
 
         <div style="float: left; margin: 40px;">
-        <img src="https://png.pngtree.com/png-vector/20191208/ourmid/pngtree-beautiful-photo-album-glyph-vector-icon-png-image_2084717.jpg" height="55" alt="" style="border-radius: 25%">
+        <img src="https://png.pngtree.com/png-vector/20191208/ourmid/pngtree-beautiful-photo-album-glyph-vector-icon-png-image_2084717.jpg" height="55" alt="">
            <h3 style="float: right; margin: 10px;">Album </h3>
         </div>
 
          <div style="float: left; margin: 40px;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAMLwfxVieHHK6Bv_CX1X41OW-RkZxoxuE3yAAH6fjuQEeDHQUh3dfkIrtPZFg_VBJ8o&usqp=CAU" height="55" alt="" style="border-radius: 25%">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAMLwfxVieHHK6Bv_CX1X41OW-RkZxoxuE3yAAH6fjuQEeDHQUh3dfkIrtPZFg_VBJ8o&usqp=CAU" height="55" alt="">
            <h3 style="float: right; margin: 10px; margin-left: 5px">Stories </h3>
         </div>
 </div>
@@ -304,34 +306,34 @@
 <table>
   <tr class="row">
   <td class="column">
-  <img src="https://images.pexels.com/photos/3265460/pexels-photo-3265460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature" style="width:100%; height: 98%" onclick="myFunction(this);">
+  <img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.6435-9/129314832_3612613648796830_6724460720046237658_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGspCHYIBfe6x5hQIxcYXOC0gu2MzgbvBPSC7YzOBu8E_1d6DFLgMcah40D4C9rcQf0Cg1vWIi0Ot7uBSd8Z9xo&_nc_ohc=I2I9tziR494AX-mxaNk&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfATEQHknKCBVcO71L8F6Ta1fJMKtUkTCIVAUCmvBESnxA&oe=640AC956" id="almbumimg" alt="Nature" onclick="myFunction(this);">
   </td>
   
   <td class="column">
-    <img src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature" style="width:100%; height: 98%" onclick="myFunction(this);">
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t1.6435-9/73342835_2549449578446581_5320651536924147712_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeFCBXBAFopSUtT8mi8ESiLz3-rmwUXErKnf6ubBRcSsqRrTya5l-019sT0bbVO0QxlzcFqqaeSSUrX5b9GgeJUe&_nc_ohc=TsXFTH5kgLYAX_cJTyk&_nc_ht=scontent.fmnl4-5.fna&oh=00_AfA6OFTf1aTTtEq4zNvygLf1wVwChM167dUx0uCMs_U2SA&oe=640AE33A" id="almbumimg" alt="Nature" onclick="myFunction(this);">
   </td>
 
   <td class="column">
-    <img src="https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 " alt="Nature" style="width:100%; height: 98%" onclick="myFunction(this);">
+    <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.6435-9/61497496_2287926681265540_8510780303239806976_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeHNZ6N24_SChU47XIPbi_ODcaEyyVUQ-8hxoTLJVRD7yC4Oob2-QHqMQpGsCx9--NP88GsKQ6yf9Z0Qtmr8TvVe&_nc_ohc=0-a4rHzf7J0AX9hc4iv&_nc_ht=scontent.fmnl4-2.fna&oh=00_AfAwho0OfDZ0-uShxK19vbLwJsIZ2bcMrgHXe4oz4Jr26w&oe=640B14D7" id="almbumimg" alt="Nature" onclick="myFunction(this);">
   </td>
 
   <td class="column">
-    <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Snow" style="width:100%; height: 98%" onclick="myFunction(this);">
+    <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t31.18172-8/22459478_1527645933960289_8849104674690725844_o.jpg?_nc_cat=101&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeFNLQ4j3Or0u14zYtS1BsCQ51YHtLfzzhPnVge0t_POEwGRV7z_XTlfQSy0aFhMgPW8ZbsoSDQl-5jTptMDLAS5&_nc_ohc=DrtW2XTMj-4AX9Py3uf&_nc_oc=AQlfWmnMuNxvAOd7huCRz34b3BJMpRH-nj8nJ529FuN9VXVhOcd872gx44cQWv9sAig&_nc_ht=scontent.fmnl4-2.fna&oh=00_AfCuxF98JsXMeLw_-IHWj-xpYLqrLIZz5vKSnz7svQ6H9g&oe=640B1ECF" id="almbumimg" alt="Snow" onclick="myFunction(this);">
   </td>
 
   <td class="column">
-    <img src="https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mountains" style="width:100%; height: 98%" onclick="myFunction(this);">
+    <img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.18169-9/12805958_1022666827791538_5753461094743996908_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeFiWK0sg6iTqlJ7Yp797Pee8btMgcm7LjPxu0yBybsuM6jfMvzZX4j-FO4-nsEgjiEJf8n0xXpdRDu4uc9BNdah&_nc_ohc=fIWA6z1iz2IAX-bbTKB&_nc_ht=scontent.fmnl4-4.fna&oh=00_AfBB7iSCIJw-t4WlN7ROReFy6lmjLPBOZczuTj4ggqGNiQ&oe=640AFEB6" id="almbumimg" alt="Mountains" onclick="myFunction(this);">
   </td>
   
   <td class="column">
-    <img src="https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Lights" style="width:100%; height: 98%" onclick="myFunction(this);">
+    <img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.18169-9/12310520_973905482667673_8643867417716791430_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeEBrsmGTP8_4sqkbDfzYxmPCztwY08VNUELO3BjTxU1QS7E-PO0Abn8TUUJRBGOI8kSYi_iiF_fk-aQzDeYujjO&_nc_ohc=P14ztxxjT7kAX82DMdo&_nc_ht=scontent.fmnl4-3.fna&oh=00_AfCydt9_ryqWK0TXgjS9-gnNvVC0IkDMDIZdtF-QSmXd0A&oe=640B06C3" id="almbumimg" alt="Lights" onclick="myFunction(this);">
   </td>
 </tr>
 </table>
 
   <div class="container">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:50%;">
+  <img id="expandedImg" style="width:50%; border-radius: 5%;">
   <div id="imgtext"></div>
       </div>
    
@@ -349,6 +351,8 @@
       Thanks For Visiting Our Site
       Have a nice day!</p> 
       </div>      
+
+
       <script>
 function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
