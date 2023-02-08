@@ -100,42 +100,26 @@
 .column img:hover {
   opacity: 0.8;
 }
-  /*.row {
+  .row {
   display: -ms-flexbox; /* IE10 */
-  /*display: flex;
+  display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
- /* flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 0 4px;
 }
  
 /*Create four equal columns that sits next to each other */
-/*.column {
+.column {
   -ms-flex: 25%; /* IE10 */
- /* flex: 25%;
   max-width: 25%;
   padding: 0 4px;
 }
 
 /* Clear floats after the columns */
-/*.row:after {
+.row:after {
   content: "";
   display: table;
   clear: both;
-}
-
-/* The expanding image container */
-/*.container {
-  position: relative;
-  display: none;
-}
-
-/* Expanding image text */
-/*#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
 }
 
   /* Responsive layout - makes a two column-layout instead of four columns */
@@ -334,7 +318,6 @@
   <div class="container">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImg" style="width:50%; border-radius: 5%;">
-  <div id="imgtext"></div>
       </div>
    
 
