@@ -15,6 +15,7 @@
 
     body{
       box-sizing: border-box;
+      background-image: linear-gradient(to bottom right, white , skyblue);
     }
 
     .sidebar{
@@ -63,7 +64,7 @@
   }
   .aboutcontent{
     display: flex;
-    margin-left: 300px;
+    margin-left: 270px;
     float: left;
     border-radius: 25px;
     margin-top: 10px;
@@ -74,9 +75,8 @@
     padding-top: 10px;
     word-break: break-all;
     white-space: pre-wrap;
+    margin-bottom: 20px;
   }
-
- 
 
   .row {
   display: -ms-flexbox; /* IE10 */
@@ -160,7 +160,7 @@
 
   <div class="sidebar">
   <a class="navbar-brand" href="#">
-        <img src="https://w7.pngwing.com/pngs/227/383/png-transparent-franklin-marshall-college-youtube-logo-youtube-blue-text-trademark.png" height="65" width="85" style="margin-left: 10px;   border-radius: 50%;" alt=""
+        <img src="https://w7.pngwing.com/pngs/227/383/png-transparent-franklin-marshall-college-youtube-logo-youtube-blue-text-trademark.png" height="65" width="85" style="margin-left: 10px; margin-top: 5px; border-radius: 50%;" alt=""
           loading="lazy" style="border-radius: 50%" />
     </a>
     <strong style="float: right; margin-top: 18px; margin-right: 17px"><h2>ShoutOut!</h2></strong> 
@@ -258,33 +258,28 @@
       <div class="main">
     <main style="margin-top: -5px;">
   <div class="container pt-1"></div>
-  <div style="float: left; margin: 40px ;">
-          <img src="https://cdn4.iconfinder.com/data/icons/facebook-and-social-media-2/64/Facebook_and_Social_Media-11-512.png" height="50" alt="">
-          <h3 style="float: right; margin: 10px;">Weekly Friends </h3>
-        </div>
-
         <div style="float: left; margin: 40px ;">
           <img src="https://cdn-icons-png.flaticon.com/512/2977/2977815.png" height="45" alt="">
            	<h3 style="float: right; margin: 10px;">Weekly Followers </h3>
             </div>
         
         <div style="float: left; margin: 40px;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJOIdtka4kzZFal6HYSh-EUFxiJ5TeVTSKSkoJ4BOt_5qRmBZW38RMyVrHwrP9128XKAE&usqp=CAU" height="55" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJOIdtka4kzZFal6HYSh-EUFxiJ5TeVTSKSkoJ4BOt_5qRmBZW38RMyVrHwrP9128XKAE&usqp=CAU" height="55" alt="" style="border-radius: 25%">
            <h3 style="float: right; margin: 10px;">Weekly Following </h3>
         </div>
         
         <div style="float: left; margin: 40px;">
-        <img src="https://png.pngtree.com/png-vector/20220702/ourmid/pngtree-television-icon-logo-vector-illustration-design-png-image_5672312.png" height="55" alt="">
+        <img src="https://png.pngtree.com/png-vector/20220702/ourmid/pngtree-television-icon-logo-vector-illustration-design-png-image_5672312.png" height="55" alt="" style="border-radius: 25%">
            <h3 style="float: right; margin: 10px;">Watch </h3>
         </div>
 
         <div style="float: left; margin: 40px;">
-        <img src="https://png.pngtree.com/png-vector/20191208/ourmid/pngtree-beautiful-photo-album-glyph-vector-icon-png-image_2084717.jpg" height="55" alt="">
+        <img src="https://png.pngtree.com/png-vector/20191208/ourmid/pngtree-beautiful-photo-album-glyph-vector-icon-png-image_2084717.jpg" height="55" alt="" style="border-radius: 25%">
            <h3 style="float: right; margin: 10px;">Album </h3>
         </div>
 
          <div style="float: left; margin: 40px;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAMLwfxVieHHK6Bv_CX1X41OW-RkZxoxuE3yAAH6fjuQEeDHQUh3dfkIrtPZFg_VBJ8o&usqp=CAU" height="55" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAMLwfxVieHHK6Bv_CX1X41OW-RkZxoxuE3yAAH6fjuQEeDHQUh3dfkIrtPZFg_VBJ8o&usqp=CAU" height="55" alt="" style="border-radius: 25%">
            <h3 style="float: right; margin: 10px; margin-left: 5px">Stories </h3>
         </div>
 </div>
@@ -306,34 +301,33 @@
       <a href="" style="color: #000000;">Following</a>
       </div>
       </div>
-
-      <div class="row">
-
-  <div class="column">
+<table>
+  <tr class="row">
+  <td class="column">
   <img src="https://images.pexels.com/photos/3265460/pexels-photo-3265460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature" style="width:100%; height: 98%" onclick="myFunction(this);">
-  </div>
-
-  <div class="column">
-    <img src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature" style="width:100%; height: 98%" onclick="myFunction(this);">
-  </div>
-
-  <div class="column">
-    <img src="https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 " alt="Nature" style="width:100%; height: 98%" onclick="myFunction(this);">
-  </div>
-
-  <div class="column">
-    <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Snow" style="width:100%; height: 98%" onclick="myFunction(this);">
-  </div>
-
-  <div class="column">
-    <img src="https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mountains" style="width:100%; height: 98%" onclick="myFunction(this);">
-  </div>
+  </td>
   
-  <div class="column">
-    <img src="https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Lights" style="width:100%; height: 98%" onclick="myFunction(this);">
-  </div>
+  <td class="column">
+    <img src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature" style="width:100%; height: 98%" onclick="myFunction(this);">
+  </td>
 
-</div>
+  <td class="column">
+    <img src="https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 " alt="Nature" style="width:100%; height: 98%" onclick="myFunction(this);">
+  </td>
+
+  <td class="column">
+    <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Snow" style="width:100%; height: 98%" onclick="myFunction(this);">
+  </td>
+
+  <td class="column">
+    <img src="https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mountains" style="width:100%; height: 98%" onclick="myFunction(this);">
+  </td>
+  
+  <td class="column">
+    <img src="https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Lights" style="width:100%; height: 98%" onclick="myFunction(this);">
+  </td>
+</tr>
+</table>
 
   <div class="container">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
@@ -341,10 +335,10 @@
   <div id="imgtext"></div>
       </div>
    
-      
+
       <div class="about">
                 <h1>About</h1>
-            </div>
+</div>
 
 
       <div class="aboutcontent">
@@ -354,8 +348,7 @@
       I will keep posting more important posts on my Website for all of you. Please give your support and love.
       Thanks For Visiting Our Site
       Have a nice day!</p> 
-      </div>
-      
+      </div>      
       <script>
 function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
