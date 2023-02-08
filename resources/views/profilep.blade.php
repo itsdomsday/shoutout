@@ -122,6 +122,14 @@
   clear: both;
 }
 
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
   /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -318,6 +326,7 @@
   <div class="container">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImg" style="width:50%; border-radius: 5%;">
+  <div id="imgtext"></div>
       </div>
    
 
