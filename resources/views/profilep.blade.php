@@ -10,6 +10,7 @@
       margin: 0;
       padding: 0;
       text-decoration: none;
+      font-family: Arial ;
     }
 
     body{
@@ -58,7 +59,7 @@
     display: flex;
     margin-left: 300px;
     float: left;
-    margin-top: 80px;
+    margin-top: 20px;
   }
   .aboutcontent{
     display: flex;
@@ -68,18 +69,91 @@
     margin-top: 10px;
     background-image: linear-gradient(to bottom right, skyblue , lightyellow);
     padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
     word-break: break-all;
     white-space: pre-wrap;
   }
 
-  .album img{
-    transition: 1s;
-    padding: 5px;
+ 
+
+  .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  opacity: 1; 
+  cursor: pointer; 
+  border-radius: 25px;
+}
+
+.column img:hover {
+  opacity: 0.8;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+  border-radius: 25%;
+}
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
   }
-  .album img:hover{
-    filter:grayscale(50%);
-    transform: scale(1.1);
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
   }
+}
   </style>
 </head>
 <body>
@@ -89,7 +163,7 @@
         <img src="https://w7.pngwing.com/pngs/227/383/png-transparent-franklin-marshall-college-youtube-logo-youtube-blue-text-trademark.png" height="65" width="85" style="margin-left: 10px;   border-radius: 50%;" alt=""
           loading="lazy" style="border-radius: 50%" />
     </a>
-    <strong style="float: right; margin-top: 18px; margin-right: 5px"><h1>ShoutOut!</h1></strong> 
+    <strong style="float: right; margin-top: 18px; margin-right: 17px"><h2>ShoutOut!</h2></strong> 
     </br>
     </br>
     <h2>Places</h2>
@@ -233,19 +307,42 @@
       </div>
       </div>
 
-      <div class="album" style="float: left;">
-      
-      <a href="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.6435-9/129314832_3612613648796830_6724460720046237658_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGspCHYIBfe6x5hQIxcYXOC0gu2MzgbvBPSC7YzOBu8E_1d6DFLgMcah40D4C9rcQf0Cg1vWIi0Ot7uBSd8Z9xo&_nc_ohc=I2I9tziR494AX-mxaNk&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfB2CF8H7Awyxujc_PkokKpaw_72SoiQY98xqYfZWNijaA&oe=6409B016"><img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.6435-9/129314832_3612613648796830_6724460720046237658_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGspCHYIBfe6x5hQIxcYXOC0gu2MzgbvBPSC7YzOBu8E_1d6DFLgMcah40D4C9rcQf0Cg1vWIi0Ot7uBSd8Z9xo&_nc_ohc=I2I9tziR494AX-mxaNk&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfB2CF8H7Awyxujc_PkokKpaw_72SoiQY98xqYfZWNijaA&oe=6409B016" height="300" alt="images"></a>
+      <div class="row">
 
-      <a href="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/61497496_2287926681265540_8510780303239806976_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeHNZ6N24_SChU47XIPbi_ODcaEyyVUQ-8hxoTLJVRD7yC4Oob2-QHqMQpGsCx9--NP88GsKQ6yf9Z0Qtmr8TvVe&_nc_ohc=dOEl6xIsEhgAX9JjsLh&tn=jpUEIVEff-V9z0JH&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfB7ANVXptBpgrR3rqPx1HA8rPQQFk-RlqSiZyijwgI3Gg&oe=6408E257"><img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/61497496_2287926681265540_8510780303239806976_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeHNZ6N24_SChU47XIPbi_ODcaEyyVUQ-8hxoTLJVRD7yC4Oob2-QHqMQpGsCx9--NP88GsKQ6yf9Z0Qtmr8TvVe&_nc_ohc=dOEl6xIsEhgAX9JjsLh&tn=jpUEIVEff-V9z0JH&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfB7ANVXptBpgrR3rqPx1HA8rPQQFk-RlqSiZyijwgI3Gg&oe=6408E257" height="300" alt=""></a>
+  <div class="column">
+  <img src="https://images.pexels.com/photos/3265460/pexels-photo-3265460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature" style="width:100%; height: 98%" onclick="myFunction(this);">
+  </div>
 
-      <a href="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/58763350_2238447429546799_3979491966604804096_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeHyPyt9Lr3xNYnhztXR56NY2laFc3qNOEPaVoVzeo04Q4MwjxIRh2Cl1UovJ7VzLZFGuyIboWGP9vwbqcUvYf-c&_nc_ohc=QVSkkx9o3w0AX92xsUT&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfBciiKP3hUz5W3btXbKPHGyIhk8WncQaQY8FrPwbtKIAQ&oe=6408D3D9"><img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/58763350_2238447429546799_3979491966604804096_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeHyPyt9Lr3xNYnhztXR56NY2laFc3qNOEPaVoVzeo04Q4MwjxIRh2Cl1UovJ7VzLZFGuyIboWGP9vwbqcUvYf-c&_nc_ohc=QVSkkx9o3w0AX92xsUT&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfBciiKP3hUz5W3btXbKPHGyIhk8WncQaQY8FrPwbtKIAQ&oe=6408D3D9" height="300" alt=""></a>
+  <div class="column">
+    <img src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature" style="width:100%; height: 98%" onclick="myFunction(this);">
+  </div>
 
-      <a href="https://scontent.fcrk4-1.fna.fbcdn.net/v/t31.18172-8/22459478_1527645933960289_8849104674690725844_o.jpg?_nc_cat=101&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeFNLQ4j3Or0u14zYtS1BsCQ51YHtLfzzhPnVge0t_POEwGRV7z_XTlfQSy0aFhMgPW8ZbsoSDQl-5jTptMDLAS5&_nc_ohc=XKlTupjNE2cAX8tJor3&_nc_oc=AQkRJ9coZ2QgIGDkMogCHPb1vZGIsH6AAY7lVPMThmzJ2Aq74wUDk-u8WjoUYuD93DU&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfADX93B4OgesddmzaTb22xk5JR84GCoyCwPEYMiP77UrQ&oe=6408EC4F"><img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t31.18172-8/22459478_1527645933960289_8849104674690725844_o.jpg?_nc_cat=101&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeFNLQ4j3Or0u14zYtS1BsCQ51YHtLfzzhPnVge0t_POEwGRV7z_XTlfQSy0aFhMgPW8ZbsoSDQl-5jTptMDLAS5&_nc_ohc=XKlTupjNE2cAX8tJor3&_nc_oc=AQkRJ9coZ2QgIGDkMogCHPb1vZGIsH6AAY7lVPMThmzJ2Aq74wUDk-u8WjoUYuD93DU&_nc_ht=scontent.fcrk4-1.fna&oh=00_AfADX93B4OgesddmzaTb22xk5JR84GCoyCwPEYMiP77UrQ&oe=6408EC4F" height="300" alt=""></a>
+  <div class="column">
+    <img src="https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 " alt="Nature" style="width:100%; height: 98%" onclick="myFunction(this);">
+  </div>
+
+  <div class="column">
+    <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Snow" style="width:100%; height: 98%" onclick="myFunction(this);">
+  </div>
+
+  <div class="column">
+    <img src="https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mountains" style="width:100%; height: 98%" onclick="myFunction(this);">
+  </div>
+  
+  <div class="column">
+    <img src="https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Lights" style="width:100%; height: 98%" onclick="myFunction(this);">
+  </div>
+
+</div>
+
+  <div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:50%;">
+  <div id="imgtext"></div>
       </div>
-</body>
-
-            <div class="about">
+   
+      
+      <div class="about">
                 <h1>About</h1>
             </div>
 
@@ -258,4 +355,16 @@
       Thanks For Visiting Our Site
       Have a nice day!</p> 
       </div>
+      
+      <script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
       </html>
