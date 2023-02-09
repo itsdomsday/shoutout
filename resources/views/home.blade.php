@@ -4,7 +4,7 @@
 @section('content')
 
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-12">
                 <div>
                     @if(session('success'))
                         <div class="alert alert-primary" role="alert">
@@ -12,7 +12,7 @@
                         </div>
                     @endif
                     <div class="card p-3 mb-3">
-                            <p class="fw-bold">Write a Twat</p>
+                            <p class="fw-bold">Write a ShoutOut</p>
                                 <form action="" method="POST" enctype="multipart/form-data">
                                  @csrf
                                 <div class="row">
@@ -24,7 +24,7 @@
                                         <label class="mt-2 bg-primary text-white rounded px-2 py-1 fw-bold" for="image" style="cursor: pointer;" id="imageUploadLabel"><small>⬆ Add a photo...</small></label>
                                     </div>
                                     <div class="col-2">
-                                        <button type="submit" class="btn btn-primary">
+                                        <button type="submit" class="btn" style="background-color: #634BFF;">
                                             Shout
                                         </button>
                                     </div>
@@ -55,21 +55,6 @@
                         </div>
                 </div>
          </div>
-        <div class="col-md-3">
-            <div>
-
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h2>Trending</h2>
-                    <div class="card my-2">
-                        <div class="card-body">
-                            <p><a class="text-decoration-none" href="#">#trending</a></p>
-                        </div>    
-                    </div>
-                </div>    
-            </div>
-        </div>
     </div>
 
 

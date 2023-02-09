@@ -36,7 +36,6 @@
     .sidebar{
       position: sticky;
       background: #e0e0e0;
-      width: 250px;
       height: 100%;
       top: 0;
       left: 0;
@@ -44,11 +43,11 @@
     }
     
     .sidebar ul li {
-      margin: 25px 0;
+      margin: 15px 0;
     }
     
     .sidebar ul li h4{
-      color: #000000;
+      color: #634BFF;
       margin-left: 20px;
       transition: 0.4s;
     }
@@ -77,108 +76,18 @@
 
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="sidebar col-2 position-sticky">
-                    <a class="navbar-brand" href="#">
-                        <img src="https://w7.pngwing.com/pngs/227/383/png-transparent-franklin-marshall-college-youtube-logo-youtube-blue-text-trademark.png" height="65" width="85" style="margin-left: 10px;   border-radius: 50%;" alt=""
-                        loading="lazy" style="border-radius: 50%" />
-                    </a>
-                    <strong style="float: right; margin-top: 18px; margin-right: 5px"><h1>ShoutOut!</h1></strong> 
-                    </br>
-                    </br>
-                    <h2>Places</h2>
-                    <ul class="nav">
-                    <li>
-                        <a href="#">
-                        <i class="fas fa-server"></i>
-                        <span><h4>Friends</h4></span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                        <i class="fas fa-server"></i>
-                        <span><h4>Marketplace</h4></span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                        <i class="fas fa-server"></i>
-                        <span><h4>Groups</h4></span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                        <i class="fas fa-server"></i>
-                        <span><h4>Most Recent</h4></span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                        <i class="fas fa-server"></i>
-                        <span><h4>Events</h4></span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                        <i class="fas fa-server"></i>
-                        <span><h4>Favorites</h4></span>
-                        </a>
-                    </li>
-                    </ul>
-
-
-                    <h2>Menu</h2>
-                    <ul class="nav">
-                    <li>
-                        <a href="#">
-                        <i class="fas fa-server"></i>
-                        <span><h4>Statistics</h4></span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                        <i class="fas fa-server"></i>
-                        <span><h4>Dashboard</h4></span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                        <i class="fas fa-server"></i>
-                        <span><h4>Documents</h4></span>
-                        </a>
-                    </li>
-                    </ul>
-
-                    
-                    <h2>Other</h2>
-                    <ul class="nav">
-                    <li>
-                        <a href="#">
-                        <i class="fas fa-server"></i>
-                        <span><h4>Settings</h4></span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                        <i class="fas fa-server"></i>
-                        <span><h4>Log Out</h4></span>
-                        </a>
-                    </li>
-                    </ul>
+                <div class="sidebar col-md-2">
+                  @include('layouts.nav')
                 </div>
-                <div class="col-7 mt-5">
+                <div class="col-md-8 mt-5">
                     <main>
                       @yield('content')
                     </main>
+                </div>
+                <div class="col-md-2 mt-5 ">
+                    @include('layouts.trending')
                 </div>
               </div>    
         </div>
