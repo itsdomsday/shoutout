@@ -357,6 +357,7 @@ margin-top: 10px;
     <div class="wrapper" id="postsection">
       <form action="" method="post" class="form">
         <textarea name="message" id="" cols="30" rows="10" class="message" placeholder="What's on your mind?" style="text: italic;"></textarea>
+        <br>
         <button type="submit" class="btn">Post</button>
       </form> 
 
