@@ -58,13 +58,16 @@
   padding: 15px;
 }
 #wrapper.toggled #page-content-wrapper {
-    padding-left: 250px;
+    padding-left: 40px;
 }
 /* Sidebar Styles */
 
 .sidebar-nav {
-    padding: 0;
-    list-style: none;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .sidebar-nav li {
   text-indent: 20px;
