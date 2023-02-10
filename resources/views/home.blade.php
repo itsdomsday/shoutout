@@ -21,7 +21,7 @@
                                         <input class="form-control" placeholder="Say anything you want..." type="text" name="content">
                                         
                                         <input class="form-control d-none" type="file" name="image" id="image" accept=".gif,.jpg,.jpeg,.png" onchange="imageUpload(event);">
-                                        <label class="mt-2 bg-primary text-white rounded px-2 py-1 fw-bold" for="image" style="cursor: pointer;" id="imageUploadLabel"><small>⬆ Add a photo...</small></label>
+                                        <label class="mt-2 text-white rounded px-2 py-1 fw-bold" for="image" style="cursor: pointer;background-color: #634BFF;" id="imageUploadLabel"><small>⬆ Add a photo...</small></label>
                                     </div>
                                     <div class="col-2">
                                         <button type="submit" class="btn" style="background-color: #634BFF;">

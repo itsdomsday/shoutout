@@ -72,6 +72,21 @@
     justify-content: space-around;
     flex-flow: wrap;
   }
+
+  .footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-right: 10px;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 15px;
+}
         </style>
 
     </head>
