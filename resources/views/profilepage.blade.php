@@ -319,18 +319,6 @@ margin-top: 10px;
                         </a>
                     </div>
 
-                    <!--top nav/ searchbar-->
-                      <div class="col-lg-3" id="toplinks">
-                        <div class="topnav">
-                          <div class="search-container">
-                              <form action="/action_page.php">
-                                <input type="text" placeholder="Search.." name="search">
-                                <button type="submit"><i class="fa fa-search"></i></button>
-                              </form>
-                          </div>
-                        </div>
-                      </div>
-
                       <div class="col-lg-3" id="toplinks">
                           <a href="#" style="color: black;">
                               <span><i class="fa-solid fa-people-group"></i></span>
@@ -352,24 +340,27 @@ margin-top: 10px;
                           </a>
                       </div>
                       <!--top nav/ searchbar-->
-<!--profilebody content-->
-<div id="pbleft">
-    <div class="wrapper" id="postsection">
-      <form action="" method="post" class="form">
-        <textarea name="message" id="" cols="30" rows="10" class="message" placeholder="What's on your mind?" style="text: italic;"></textarea>
-        <br>
-        <button type="submit" class="btn">Post</button>
-      </form> 
 
-    </div>
-</div>
-<div id="pbright">
-  <iframe class="ratio ratio-4x3" style="background: black; width: 100%; height: 500px; border-radius: 5%;" src="https://www.youtube.com/embed/iQbpwSCMcF4"></iframe>
-  <iframe class="ratio ratio-4x3" style="background: black; width: 100%; height: 500px; border-radius: 5%;" src="https://www.youtube.com/embed/Cj3AV92fJ90"></iframe>
-</div>        
-                                  
-            </div>
-        </div>
+
+                      <!--profilebody content-->
+                      <div class="column">
+                      <div class="row">
+                          <div class="col md-4" style="background: white">FIRST ROW CONTENT</div>
+                          <div class="col md-4" style="background: yellow">SECOND ROW CONTENT</div>
+                          <div class="col md-4" style="background: lightpink">THIRD ROW CONTENT</div>
+                      </div>
+                      
+                      <div id="pbleft" style="background: lightyellow">FIRST DIVISION CONTENT</div>
+                      <div id="pbright" style="background: lightgreen;">SECOND DIVISION CONTENT</div> 
+                     
+                      <div class="row">
+                          <div class="col md-4" style="background: white">FIRST ROW CONTENT</div>
+                          <div class="col md-4" style="background: yellow">SECOND ROW CONTENT</div>
+                          <div class="col md-4" style="background: lightpink">THIRD ROW CONTENT</div>
+                      </div>
+                      </div> 
+
+
    </div> 
    <script>
         $("#menu-toggle").click( function(e){
@@ -379,3 +370,26 @@ margin-top: 10px;
    </script>
 </body>
 </html>
+
+
+
+
+<!--<div class="wrapper" id="postsection">
+      <form action="" method="post" class="form">
+        <textarea name="message" id="" cols="30" rows="10" class="message" placeholder="What's on your mind?" style="text: italic;"></textarea>
+        <br>
+        <button type="submit" class="btn">Post</button>
+      </form> -->
+
+
+        <!--top nav/ searchbar-->
+        <!-- <div class="col-lg-3" id="toplinks">
+                        <div class="topnav">
+                          <div class="search-container">
+                              <form action="/action_page.php">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                              </form>
+                          </div>
+                        </div>
+                      </div>
