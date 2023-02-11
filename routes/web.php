@@ -18,6 +18,10 @@ Route::get('/', function () {
     return redirect()-> route('login');
 });
 
+Route::get('/profilepage', function () {
+    return view('profilepage');
+});
+
 Route::get('/home', function () {
     return view('home');
 })->middleware(['auth', 'verified'])->name('home');
