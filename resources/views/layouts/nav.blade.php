@@ -87,11 +87,13 @@
                     </li>
 
                     <li>
-                        <form method="POST" action="{{ route('logout') }}">
-                        <a href="{{ route('logout') }}" onlick="event.preventDefault();this.closest('form').submit();">
-                        <i class="fas fa-server"></i>
-                        <span><h4>{{ __('Log Out') }}</h4></span>
-                        </a>
+                        <form action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <a href="{{ route('logout') }}" onlick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                <i class="fas fa-server"></i>
+                                <span><h4>{{ __('Log Out') }}</h4></span>
+                            </a>
                         </form>
                     </li>
                     </ul>
