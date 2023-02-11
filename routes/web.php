@@ -18,12 +18,12 @@ Route::get('/', function () {
     return redirect()-> route('login');
 });
 
-Route::get('/profilep', function () {
+Route::get('/profilepage', function () {
     return view('profilepage');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
+Route::get('/home', function () {
+    return view('home');
 })->middleware(['auth', 'verified'])->name('home');
 
 Route::middleware('auth')->group(function () {
