@@ -21,7 +21,7 @@
         }
 
         body{
-            background: lightblue;
+            background: #151419;
         }
 
 /* sidebar */
@@ -32,9 +32,6 @@
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-#wrapper.toggled {
-  padding-left: 250px;
-}
 #sidebar-wrapper {
   z-index: 1;
   position: fixed;
@@ -43,29 +40,11 @@
   height: 100%;
   margin-left: -250px;
   overflow-y: auto;
-  background: rgb(5, 68, 104);
+  background: #3B374A;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-#wrapper.toggled #sidebar-wrapper {
-  width: 250px;
-}
-#page-content-wrapper {
-  width: 100%;
-  position: absolute;
-  padding: 15px;
-}
-#wrapper.toggled #page-content-wrapper {
-    padding-left: 20px;
-}
-
-#toplinks a:link,
-#toplinks a:focus{
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
 }
 /* Sidebar Styles */
 
@@ -83,28 +62,12 @@
 .sidebar-nav li a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: #E0DDFA;
 }
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: white;
-  background: #16a085;
-}
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-  text-decoration: none;
-}
-.sidebar-nav > .sidebar-brand {
-  height: 65px;
-  font-size: 18px;
-  line-height: 60px;
-}
-.sidebar-nav > .sidebar-brand a {
-  color: #999999;
-}
-.sidebar-nav > .sidebar-brand a:hover {
-  color: #fff;
-  background: none;
+  background: #634BFF;
 }
 @media(min-width:768px) {
   #wrapper {
@@ -129,7 +92,7 @@
   }
 }
 #wrapper #sidebar-wrapper .profile h4{
-color: white;
+color: #E0DDFA;
 text-align: center;
 margin: 10px 0 5px;
 }
@@ -147,64 +110,6 @@ margin: 0 auto;
 margin-top: 10px;
 }
 
-
-/* Top Nav Style*/      
-.topnav {
-  overflow: hidden;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav .search-container {
-  float: left;
-}
-
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: auto;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
-}
 /*Profile body*/
 #pbleft{
   float: left;
@@ -214,16 +119,6 @@ margin-top: 10px;
   float: left;
   width: 50%
 } 
-
-#postsection{
-  background: white;
-  border-radius: 10px;
-  width: 500px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
     </style>
 </head>
 <body>
@@ -238,7 +133,7 @@ margin-top: 10px;
                 
                 </li>
                 <ul class="sidebar-nav">
-                <li><h4 style="color: white;">Profile</h4></li>
+                <li><h4 style="color: #E0DDFA;">Profile</h4></li>
                 </ul>
                 <li><a href="#"> 
                     <span><i class="fa-solid fa-message"></i></span>
@@ -254,7 +149,7 @@ margin-top: 10px;
             </ul>
 
             <ul class="sidebar-nav">
-                <li><h4 style="color: white;">Entertainment</h4></li>
+                <li><h4 style="color: #E0DDFA;">Entertainment</h4></li>
 
                 <li><a href="#"> 
                     <span><i class="fa-solid fa-tv"></i></span>
@@ -270,7 +165,7 @@ margin-top: 10px;
             </ul>
 
             <ul class="sidebar-nav">
-                <li><h4 style="color: white;">Engagements</h4></li>
+                <li><h4 style="color: #E0DDFA;">Engagements</h4></li>
 
                 <li><a href="#"> 
                     <span><i class="fa-solid fa-user-group"></i></span>
@@ -286,7 +181,7 @@ margin-top: 10px;
             </ul>
 
             <ul class="sidebar-nav">
-                <li><h4 style="color: white;">Activities</h4></li>
+                <li><h4 style="color: #E0DDFA;">Activities</h4></li>
 
                <li><a href="#">
                     <span><i class="fa-solid fa-store"></i></span>
@@ -294,7 +189,7 @@ margin-top: 10px;
             </ul>
 
             <ul class="sidebar-nav">
-                <li><h4 style="color: white;">Account</h4></li>
+                <li><h4 style="color: #E0DDFA;">Account</h4></li>
                 
                     <li><a href="#">
                     <span><i class="fa-solid fa-gear"></i></span>
@@ -313,35 +208,8 @@ margin-top: 10px;
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-1">
-                        <a href="#" class="btn" id="menu-toggle">
-                            <img src="https://img.freepik.com/free-vector/illustrationn-megaphone-monochrome-style-isolated-white-background_1284-38767.jpg" style="border-radius: 50%; width: 50px; height: 50px;" alt="">
-                        </a>
-                    </div>
-
-                      <div class="col-lg-3" id="toplinks">
-                          <a href="#" style="color: black;">
-                              <span><i class="fa-solid fa-people-group"></i></span>
-                                  <span>Groups</span>
-                          </a>    
-                      </div>
-                                 
-                      <div class="col-lg-3" id="toplinks">
-                          <a href="#" style="color: black;">
-                              <span><i class="fa-solid fa-gamepad"></i></span>
-                                  <span>Gaming</span>
-                          </a>    
-                      </div>
-                     
-                      <div class="col-lg-2" id="toplinks">
-                          <a href="#" style="color: black;">
-                              <span><i class="fa-sharp fa-solid fa-cloud-sun"></i></span>
-                                  <span>Stories</span>
-                          </a>
-                      </div>
-                      <!--top nav/ searchbar-->
-
-
+                    <div class="col-lg-3">         
+                       </div>
                       <!--profilebody content-->
                       <div class="column">
                       <div class="row">
@@ -349,7 +217,7 @@ margin-top: 10px;
                           <div class="col md-4" style="background: yellow">SECOND ROW CONTENT</div>
                           <div class="col md-4" style="background: lightpink">THIRD ROW CONTENT</div>
                       </div>
-                      
+
                       <div id="pbleft" style="background: lightyellow">FIRST DIVISION CONTENT</div>
                       <div id="pbright" style="background: lightgreen;">SECOND DIVISION CONTENT</div> 
                      
@@ -359,15 +227,7 @@ margin-top: 10px;
                           <div class="col md-4" style="background: lightpink">THIRD ROW CONTENT</div>
                       </div>
                       </div> 
-
-
-   </div> 
-   <script>
-        $("#menu-toggle").click( function(e){
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        } );
-   </script>
+   </div>
 </body>
 </html>
 
