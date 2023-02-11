@@ -230,26 +230,3 @@ margin-top: 10px;
    </div>
 </body>
 </html>
-
-
-
-
-<!--<div class="wrapper" id="postsection">
-      <form action="" method="post" class="form">
-        <textarea name="message" id="" cols="30" rows="10" class="message" placeholder="What's on your mind?" style="text: italic;"></textarea>
-        <br>
-        <button type="submit" class="btn">Post</button>
-      </form> -->
-
-
-        <!--top nav/ searchbar-->
-        <!-- <div class="col-lg-3" id="toplinks">
-                        <div class="topnav">
-                          <div class="search-container">
-                              <form action="/action_page.php">
-                                <input type="text" placeholder="Search.." name="search">
-                                <button type="submit"><i class="fa fa-search"></i></button>
-                              </form>
-                          </div>
-                        </div>
-                      </div>
