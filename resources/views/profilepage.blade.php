@@ -204,13 +204,12 @@ margin-top: 10px;
                     <span> Log Out</span></a></li>
             </ul>
         </div>
-
+                      <!--profilebody content-->
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3">         
                        </div>
-                      <!--profilebody content-->
                       <div class="column">
                       <div class="row">
                           <div class="col md-4" style="background: white">FIRST ROW CONTENT</div>
